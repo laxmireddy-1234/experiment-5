@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-                sh 'python -m py_compile Addition.py'
+                sh 'python3 -m py_compile Addition.py'
             }
         }
 
         stage('Run') {
             steps {
-                sh 'python Addition.py'
+                sh 'python3 Addition.py'
             }
         }
     }

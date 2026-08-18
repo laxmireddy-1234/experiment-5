@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-                sh 'javac HelloWorld.java'
+                sh 'javac Addition.java'
             }
         }
 
         stage('Run') {
             steps {
-                sh 'java HelloWorld'
+                sh 'java Addition'
             }
         }
     }
